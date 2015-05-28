@@ -14,9 +14,9 @@ describe("#romanNum", function() {
     expect(romanNum("236")).to.equal("CCXXXVI");
   })
 
-  it("converts numbers 1000-5000", function() {
+  it("converts numbers 1000-3999", function() {
     expect(romanNum("3124")).to.equal("MMMCXXIV");
-    expect(romanNum("4236")).to.equal("MMMMCCXXXVI");
+    expect(romanNum("4236")).to.equal("is not a roman numeral");
   })
 });
 
