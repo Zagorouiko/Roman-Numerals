@@ -44,3 +44,14 @@ function romanNum(number) {
   })
   return numberString;
 }
+
+$(document).ready(function() {
+  $("form#roman-numeral").submit(function(event) {
+    var number = ($("input#convert").val());
+    var result = romanNum(number);
+    $("span.converted").text(result);
+    $("p#result").text(result);
+    $("p#result").show;
+    event.preventDefault();
+  });
+});
